@@ -3,7 +3,7 @@
 
 # Variable
 - $access_token    // โทเคนที่ได้จากเว็บ PushBullet
-- $iden            // เราต้อง print_r($sms-DevicesList()) ก่อนเพื่อดู Devices เเล้วทำการเเก้ไขเลข array ให้ตรง
+- $iden            // เราต้อง print_r($sms->DevicesList()) ก่อนเพื่อดู Devices เเล้วทำการเเก้ไขเลข array ให้ตรง
 
 # Example Get OTP Truemoney Wallet
 ```php
