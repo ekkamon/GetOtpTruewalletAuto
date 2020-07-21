@@ -3,15 +3,15 @@
 Class ReadSMS{
     public $access_token = null;
     
-	public function CreateHeaders ($array) {
+    public function CreateHeaders ($array) {
 		$headers = array();
 		foreach ($array as $key => $value) {
 			$headers[] = $key.": ".$value;
 		}
 		return $headers;
-    	}
+    }
     
-	public function request ($method, $url, $headers = array(), $data = null) {
+    public function request ($method, $url, $headers = array(), $data = null) {
 		$handle = curl_init();
 		if (!is_null($data)) {
 			curl_setopt($handle, CURLOPT_POSTFIELDS, is_array($data) ? json_encode($data) : $data);
